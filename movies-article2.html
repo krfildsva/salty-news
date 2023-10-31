@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c0ca63f2cb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="web.css" type="text/css">
+  <title>SALTY NEWS</title>
+  </head>
+    
+  
+<header>  
+      <nav class="navbar fixed-top" style="background-color: #ed919f;">
+        <div class="container-fluid">
+          <h1 id="main-name">SALTY NEWS</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <div class="container1" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SALTY NEWS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="web.html">Main</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-page.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Topics
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="anime-page.html">Anime</a></li>
+                    <li><a class="dropdown-item" href="kpop-page.html">K-pop</a></li>
+                    <li><a class="dropdown-item" href="movies-page.html">Movies</a></li>
+                    <li><a class="dropdown-item" href="games-page.html">Games</a></li>
+                    <li><a class="dropdown-item" href="celebrities-page.html">Celebrities</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search" id="search-form">
+                <input class="form-control me-2" type="search" id="search-input" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <br>
+              <div id="search-results"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          <nav>
+    <ul class="navigation">
+      <li><i class="fa-solid fa-compact-disc fa-lg" style="color: #A83C50;"></i><a class="btn btn-link" href="anime-page.html" role="button">Anime</a></li>
+      <li><i class="fa-solid fa-person-rays fa-lg" style="color: #A83C50"></i><a class="btn btn-link" href="celebrities-page.html" role="button">Celebrities</a></li>
+      <li><i class="fa-solid fa-microphone fa-lg" style="color: #A83C50;"></i><a class="btn btn-link" href="kpop-page.html" role="button">K-pop</a></li>
+      <li><i class="fa-solid fa-gamepad fa-lg" style="color: #A83C50"></i><a class="btn btn-link" href="games-page.html" role="button">Games</a></li>
+      <li><i class="fa-solid fa-video fa-lg" style="color: #A83C50;"></i><a class="btn btn-link" href="movies-page.html" role="button">Movies</a></li>
+    </ul>
+    </nav>
+    </header>
+    <hr>
+
+    <body>
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/?locale=ru_RU" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://google.com/" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+      <div class="container">
+  <section class="articles">
+    <h2 class="title">New movies coming out in Fall, 2023</h2>
+    <img src="movies.jpg" class="article-image" alt="aib">
+    <p class="main-article">
+        Here are list of movies coming out in Fall:
+        <br class="blank">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Films</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Series</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Anime</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <br>Moon
+              <br>Country: South Korea
+              <br>Release date: September 28
+              <hr>
+              Exorcist: Believer
+              <br>Country: USA
+              <br>Release date worldwide: October 6
+              <hr>
+              Freelance bodyguard
+              <br>Country: USA
+              <br>Release date worldwide: October 6
+              <hr>
+              Street dance. World-class
+              <br>Country: UK
+              <br>Release date: October 12
+              <hr>
+              Killers of the Flower Moon
+              <br>Country: USA
+              <br>Release date worldwide: October 20
+              <hr>
+              Five Nights at Freddy's
+              <br>Country: USA
+              <br>Release date worldwide: October 27
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <br>Fraser
+              <br>Country: USA
+              <br>Release date worldwide: October 12
+              <hr>
+              <br>Fall of the House of Usher
+              <br>Country: USA
+              <br>Release date worldwide: October 12
+              <hr>
+              <br>Chemistry lesson
+              <br>Country: USA
+              <br>Release date worldwide: October 13
+              <hr>
+              <br>Strong woman Kang Nam Soon
+              <br>Release date: October 7
+              <hr>
+              <br>Li Du Na!
+              <br>Release date: October 20
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              <br>The worries of a locked vampire princess
+              <br>Release date: October 7
+              <hr>
+              <br>Spy x Family (Season 2)
+              <br>Release date: October 7
+              <hr>
+              <br>Monologue of a pharmacist
+              <br>Release date: October 22
+              <hr>
+              <br>Pluto
+              <br>Release date: October 26
+              <hr>
+              <br>The Seven Deadly Sins: The Four Horsemen of the Apocalypse
+              <br>Release date: October 8
+            </div>
+          </div>
+    </p>
+
+    <hr>
+    </section>
+
+    <aside>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="gojo.jpeg" class="card-img-top" alt="gojo">
+              <div class="card-body d-flex flex-column">
+                <h3 class="head">Popular Anime Categories</h3>
+                <p class="card-text flex-grow">
+                  <ol>
+                    <li>Action</li>
+                    <li>Fantasy</li>
+                    <li>Romance</li>
+                    <li>Sci-Fi</li>
+                  </ol>
+                </p>
+                <a href="anime-page.html" class="btn btn-danger mt-auto">Check it out</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="nanami-card.jpeg" class="card-img-top" alt="nanami">
+              <div class="card-body d-flex flex-column">
+                <h3 class="head">About Nanami Kento</h3>
+                <p class="card-text flex-grow-1">
+                  An article of our first reader about her favorite character of Jujutsu Sorcerer.
+                </p>
+                <a href="nanami-article.html" class="btn btn-danger mt-auto">Check it out</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="movies.jpg" class="card-img-top" alt="movies">
+              <div class="card-body d-flex flex-column">
+                <h3 class="head">New movies coming out in Fall</h3>
+                <p class="card-text flex-grow-1">
+                  A movie starring Leonardo DiCaprio, a drama starring ASTRO's Cha Eunwoo, and a long-awaited anime are just some of what awaits you in Fall 2023.
+                </p>
+                <a href="movies-article2.html" class="btn btn-danger mt-auto">Check it out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    
+ </div>   
+<footer class="foot">
+      <hr>
+      &copy 2023. <em>Saltanat Korfildesova</em>
+    </footer>
+    <script src="transition.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
